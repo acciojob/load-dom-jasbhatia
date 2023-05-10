@@ -1,6 +1,5 @@
 //your JS code here. If required.
-document.addEventListener("DOMContentLoaded", (event) => {
-	let myElm = document.createElement("p");
-	myElm.innerText = 'DOM load sucess';
-});
-// window.load("DOM load success");
+document.addEventListener("DOMContentLoaded", function() {
+    var body = document.getElementsByTagName("body")[0];
+    body.innerHTML = "DOM load success";
+  });
